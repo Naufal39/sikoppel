@@ -80,9 +80,9 @@
 
             </form>
               <!-- Register buttons -->
-              <div class="text-center">
+              {{-- <div class="text-center">
                 Belum daftar? <a href="/register">daftar dulu dong !!!</a>
-              </div>
+              </div> --}}
           </div>
         </div>
       </div>
