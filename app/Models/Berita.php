@@ -6,12 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Category;
 use App\Models\User;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Berita extends Model
 {
-    use HasFactory;
+    use HasFactory, Sluggable;
 
-    protected $fillable = ['title','slug','author', 'excerpt', 'body'];
+    // protected $fillable = ['title','slug','author', 'excerpt', 'body', 'category_id', 'user_id'];
+
+    protected $guarded = ['id'];
 
     protected $with = ['user', 'category']; //eager load
 
@@ -41,4 +44,20 @@ class Berita extends Model
     public function User(){
         return $this->belongsTo(User::class);
     }
+    
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
+
+
 }

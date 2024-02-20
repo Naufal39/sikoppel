@@ -31,6 +31,13 @@
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
     {{-- <link href="../css/blog.css" rel="stylesheet"> --}}
+
+    <style type="text/css">
+
+        
+        </style>
+
+
 </head>
 
 <body>
@@ -48,13 +55,10 @@
             <div class="d-flex justify-content-between">
                 <div>
                     <small class="me-3"><i class="fa fa-map-marker-alt me-2"></i>Jl. Brigjen Darsono No. 16, Kedawung, Kab. Cirebon</small>
-                    <small class="me-3"><i class="fa fa-clock me-2"></i>Mon-Fri 08am-4pm, Sat Sun Closed</small>
+                    
                 </div>
                 <nav class="breadcrumb mb-0">
-                    <a class="breadcrumb-item small text-body" href="#">Career</a>
-                    <a class="breadcrumb-item small text-body" href="#">Support</a>
-                    <a class="breadcrumb-item small text-body" href="#">Terms</a>
-                    <a class="breadcrumb-item small text-body" href="#">FAQs</a>
+                    <small class="me-3"><i class="fa fa-clock me-2"></i>Senin-Minggu 08.00-16.00</small>
                 </nav>
             </div>
         </div>
@@ -98,42 +102,135 @@
                     data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse text-center justify-content-center" id="navbarCollapse" style="font-size: 24px">
                     <div class="navbar-nav">
                         <a href="/" class="nav-item nav-link {{ ($title === "Home") ? 'active' : '' }}">Home</a>
-                        <div class="nav-item dropdown">
+                        
+                        {{-- Selayang Pandang --}}
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle {{ ($title === "Selayang Pandang") ? 'active' : '' }}" href="#" data-bs-toggle="dropdown"> Selayang Pandang </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row justify-content-center text-center shadow-lg">
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h3 class="title">Profil</h3>
+                                            <ul class="list-unstyled">
+                                                <li style="padding-bottom: 6px;"><a href="#">Provinsi Jawa Barat</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dinas Perhubungan Prov. Jawa Barat</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">UPTD PPP Pelabuhan Laut</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h3 class="title">Hukum</h3>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Dasar Hukum</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h3 class="title m-0">Potensi Pelabuhan</h3>
+                                            <h3 class="m-0">di Jawa Barat</h3>
+                                            <ul class="list-unstyled">
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Pangandaran</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Sukabumi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kota Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Tasikmalaya</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Garut</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Bekasi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Subang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Karawang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Indramayu</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cianjur</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div>    
+                                </div><!-- end row --> 
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+                        
+                        {{-- <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle {{ ($title === "Selayang Pandang") ? 'active' : '' }}" data-bs-toggle="dropdown">Selayang Pandang</a>
                             <div class="dropdown-menu bg-light m-0">
                                 <a href="/ppatimban" class="dropdown-item {{ ($title === "Profile") ? 'active' : '' }}">Profile</a>
                                 <a href="/pcirebon" class="dropdown-item {{ ($title === "Dasar Hukum") ? 'active' : '' }}"> Dasar Hukum</a>
                                 <a href="testimonial.html" class="dropdown-item {{ ($title === "Potensi Pelabuhan") ? 'active' : '' }}"> Potensi Pelabuhan </a>
-                                  
+                            </div>
+                        </div> --}}
+
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Data dan Informasi </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row justify-content-center text-center shadow-lg">
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h5 class="title">Potensi dan Pemanfaatan Pelabuhan</h5>
+                                            <ul class="list-unstyled">
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Pangandaran</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Sukabumi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kota Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Tasikmalaya</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Garut</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Bekasi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Subang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Karawang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Indramayu</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cianjur</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h5 class="title">Fasilitas dan Aktivitas</h5>
+                                            <h5 class="title">Operasional Pelabuhan</h5>
+                                            <ul class="list-unstyled">
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan Patimban</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan Pangandaran</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan Pelabuhanratu</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan Indramayu</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-md-2" style="width: auto">
+                                        <div class="col-megamenu">
+                                            <h5 class="title">Perusahaan Penunjang</h5>
+                                            <h5 class="title">Angkutan Laut</h5>
+                                            <ul class="list-unstyled">
+                                                <li style="padding-bottom: 6px;"><a href="#">Perusahaan Pelayaran Lokal</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Perusahaan Bongkar Muat</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Perusahaan Jasa Pengurusan Transportasi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kota Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cirebon</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Tasikmalaya</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Garut</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Bekasi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Subang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Karawang</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Indramayu</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab. Cianjur</a></li>
+                                            </ul>
+                                        </div>  <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row --> 
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+
+                        <a href="/perizinan" class="nav-item nav-link {{ ($title === "Perizinan") ? 'active' : '' }}">Perizinan</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Simulasi</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="/ppatimban" class="dropdown-item">Tarif Pelabuhan</a>
+                                <a href="/pcirebon" class="dropdown-item"> Tarif Pelayaran </a>
                             </div>
                         </div>
 
-                        <div class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li class="nav-item dropend">
-                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><hr class="dropdown-divider"></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </li>
-                            </ul>
-                        </div>
-                        
-                        <a href="/perizinan" class="nav-item nav-link {{ ($title === "Perizinan") ? 'active' : '' }}">Perizinan</a>
+                        {{-- <a href="/perizinan" class="nav-item nav-link {{ ($title === "Perizinan") ? 'active' : '' }}">Perizinan</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle {{ ($title === "Pelabuhan Patimban") ? 'active' : '' }}" data-bs-toggle="dropdown">Data dan Informasi</a>
                             <div class="dropdown-menu bg-light m-0">
@@ -142,12 +239,23 @@
                                 <a href="testimonial.html" class="dropdown-item {{ ($title === "Pelabuhan Palabuhanratu") ? 'active' : '' }}"> Pelabuhan Palabuhanratu </a>
                                 <a href="appoinment.html" class="dropdown-item {{ ($title === "Pelabuhan Bojongsalawe") ? 'active' : '' }}"> Pelabuhan Bojongsalawe </a>
                             </div>
+                        </div> --}}
+
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle {{ Request::is('berita') ? 'active' : '' }}" data-bs-toggle="dropdown">Berita dan Isu</a>
+                            <div class="dropdown-menu bg-light m-0">
+                                <a href="/ppatimban" class="dropdown-item">Kondisi Cuaca</a>
+                                <a href="/pcirebon" class="dropdown-item"> Kondisi Gelombang </a>
+                                <a href="/berita" class="dropdown-item"> Berita Publikasi </a>
+                            </div>
                         </div>
-                        <a href="/berita" class="nav-item nav-link {{ ($title === "Publikasi") ? 'active' : '' }}">Publikasi</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+
+                        {{-- <a href="/berita" class="nav-item nav-link {{ ($title === "Publikasi") ? 'active' : '' }}">Publikasi</a> --}}
+                        {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                     </div>
                     
-                    @auth
+                    
+                    {{-- @auth
                     <div class="nav-item dropdown ms-auto">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Welcome back, {{ auth()->user()->name }}</a>
                         <div class="dropdown-menu bg-light m-0">
@@ -161,7 +269,7 @@
                     <div class="ms-auto d-none d-lg-flex">
                         <a class="btn btn-primary ms-2" href="/login"><i class="bi bi-box-arrow-in-right mx-2"></i>Login</i></a>
                     </div>
-                    @endauth
+                    @endauth --}}
                 </div>
             </nav>
         </div>
@@ -180,7 +288,7 @@
                     <a href="index.html" class="navbar-brand">
                         <h1 class="h1 text-primary mb-0">SI<span class="text-white">Koppel</span></h1>
                     </a>
-                    <p class="fs-5 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor.</p>
+                    <p class="fs-5 mb-4">Sistem Informasi Konsultasi Pengelolaan Pelabuhan Laut</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>Jl. Brigjen Darsono No. 16, Kedawung, Kab. Cirebon</p>
                     <p><i class="fa fa-phone-alt me-2"></i>(0231) 8803744</p>
                     <p><i class="fa fa-envelope me-2"></i>uptdpppplaut@gmail.com</p>
@@ -192,7 +300,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ps-lg-5">
-                    <div class="row g-5">
+                    {{-- <div class="row g-5">
                         <div class="col-sm-6">
                             <h4 class="text-light mb-4">Quick Links</h4>
                             <a class="btn btn-link" href="">About Us</a>
@@ -217,7 +325,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
+                    <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=UPTD%20PPPLLAJ%20wilayah%204&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 420px; height: 400px;"></iframe><style>.mapouter{position:relative;height:400px;width:420px;background:#fff;} .maprouter a{color:#fff !important;position:absolute !important;top:0 !important;z-index:0 !important;}</style><a href="https://blooketjoin.org/blooket-login/">blooket login</a><style>.gmap_canvas{overflow:hidden;height:400px;width:420px}.gmap_canvas iframe{position:relative;z-index:2}</style></div></div>
                 </div>
             </div>
         </div>
@@ -279,6 +388,18 @@
 
 {{-- TIDIO LIVE CHAT --}}
 <script src="//code.tidio.co/cjdmryehowomoncrn8dbqlduyti21fst.js" async></script>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        	element.addEventListener('click', function (e) {
+        		e.stopPropagation();
+        	});
+        })
+    }); 
+	// DOMContentLoaded  end
+</script>
 
 </body>
 

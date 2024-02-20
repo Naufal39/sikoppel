@@ -24,23 +24,34 @@
         </div>
     </div> --}}
     <!-- Berita End -->    
-
+    <div class="container-fluid page-header py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5 mt-4">
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Publikasi</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Publikasi</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
 <!-- Page content-->
-<div class="container">
+<div class="container my-3">
     <div class="row">
-        <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        {{-- <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="display-6 mb-3">{{ $title }}</h1>
             <p class="mb-5"> {{ $deskripsi }} </p>
-        </div>
+        </div> --}}
         <!-- Blog entries-->
         <div class="col-lg-8 mt-7">
             <!-- Featured blog post-->
             @if ($posts->count())
             <div class="card mb-4 shadow-lg">
                 <h3 class="small text-light px-2 position-absolute" style="background-color: rgba(0,0,0,0.7)">{{ $posts[0]->category->nama }}</h3>
-                <a href="#!"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a>
+                <a href="#!"><img class="card-img-top" src="../img/layar.jpg" alt="..." /></a>
                 <div class="card-body">
-                    <div class="small text-muted">{{ $posts[0]->created_at->diffForHumans() }}</div>
+                    <div class="small text-muted">{{ $posts[0]->updated_at->diffForHumans() }}</div>
                     <h2 class="card-title">{{ $posts[0]->title }}</h2>
                     <h3 class="small text-muted">Penulis : {{ $posts[0]->user->name }}</h3>
                     <p class="card-text">{{ $posts[0]->excerpt }}</p>
@@ -59,9 +70,10 @@
                 @foreach ($posts->skip(1) as $data)
                 <div class="col-lg-6 col-md-6 wow fadeInUp mt-3 shadow-lg" data-wow-delay="0.1s">
                     <div class="small text-light px-2 position-absolute" style="background-color: rgba(0,0,0,0.7)">{{ $data->category->nama }}</div>
-                    <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a>
+                    {{-- <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a> --}}
+                    <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="../img/layar.jpg" alt="..." /></a>
                     <div class="card-body">
-                        <div class="small text-muted">{{ $data->created_at->diffForHumans() }}</div>
+                        <div class="small text-muted">{{ $data->updated_at->diffForHumans() }}</div>
                         <h2 class="card-title h4">{{ $data->title }}</h2>
                         <h5 class="small text-muted">Penulis : {{ $data->user->name }}</h5>
                         {{-- <h3 class="small text-muted">{{ $data->category->nama }}</h3> --}}

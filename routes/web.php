@@ -8,6 +8,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\beritaController;
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardPostController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\indexController;
 
@@ -25,7 +26,7 @@ use App\Http\Controllers\indexController;
 Route::get('/', [indexController::class, 'index']);
 
 Route::get('perizinan', function(){
-    return view('/perizinan/index',[
+    return view('/perizinan/index2',[
         "title" => "Perizinan"
     ]);
 });
@@ -77,4 +78,19 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'daftar']);
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
+Route::get('/dashboard', function(){
+    return view('dashboard/index');
+})->middleware('auth');
+
+Route::get('/faq', function(){
+    return view('faq', [
+        'title' => 'faq'
+    ]);
+});
+
+Route::resource('/dashboard/berita', DashboardPostController::class)->except(['show', 'destroy', 'edit', 'update'])->middleware('auth');
+Route::get('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'show'])->middleware('auth');
+Route::get('/dashboard/berita/{berita:slug}/edit', [DashboardPostController::class, 'edit'])->middleware('auth');
+Route::delete('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'destroy'])->middleware('auth');
+Route::put('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'update'])->middleware('auth');
+Route::get('/dashboard/berita/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');

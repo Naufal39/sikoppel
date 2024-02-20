@@ -20,6 +20,7 @@
 <div class="container-fluid py-5">
     <div class="container">
         <div class="row">
+            <img src="../img/BANNER.jpg" alt="rakornis">
             <div class="col-md-8">
                 <p style="text-align: justify; color: black; font-family: Arial, Helvetica, sans-serif;">
                     {!! $post["body"] !!} 
@@ -34,7 +35,6 @@
                     </div>
                   </div>
             </div>
-            <img src="../img/cirebon/1.jpg" alt="Pelabuhan Cirebon">
             
               </div>
         </div> 
