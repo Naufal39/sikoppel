@@ -28,6 +28,11 @@
 <div class="container-fluid py-5">
     <div class="container" style="color: black">
         <div class="row">
+            @if ($post->image)
+                <img src="{{ asset('storage/' . $post->image) }}" alt="">
+            @else
+                <p>  </p>
+            @endif
             <div class="col-md-8">
                 <p style="text-align: justify; color: rgb(3, 16, 77); font-family: Arial, Helvetica, sans-serif;">
                     {!! $post["body"] !!} 
@@ -42,7 +47,6 @@
                     </div>
                   </div>
             </div>
-            <img src="../../img/BANNER.jpg" alt="">
             
               </div>
         </div> 

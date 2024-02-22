@@ -19,6 +19,7 @@ class CreateBeritasTable extends Migration
             $table->foreignId('user_id'); // mengambil id User
             $table->string('title');
             $table->string('slug')->unique();
+            $table->string('image')->nullable();
             $table->text('excerpt');
             $table->text('body');
             $table->timestamp('published_at')->nullable();

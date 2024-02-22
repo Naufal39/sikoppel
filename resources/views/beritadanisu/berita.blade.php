@@ -49,7 +49,11 @@
             @if ($posts->count())
             <div class="card mb-4 shadow-lg">
                 <h3 class="small text-light px-2 position-absolute" style="background-color: rgba(0,0,0,0.7)">{{ $posts[0]->category->nama }}</h3>
-                <a href="#!"><img class="card-img-top" src="../img/layar.jpg" alt="..." /></a>
+                    @if ($posts[0]->image)   
+                        <a href="berita/{{ $posts[0]->slug }}"><img class="card-img-top" src="{{ asset('storage/' . $posts[0]->image) }}" alt="..." /></a>
+                    @else
+                        <a href="berita/{{ $posts[0]->slug }}"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a>
+                    @endif
                 <div class="card-body">
                     <div class="small text-muted">{{ $posts[0]->updated_at->diffForHumans() }}</div>
                     <h2 class="card-title">{{ $posts[0]->title }}</h2>
@@ -70,8 +74,11 @@
                 @foreach ($posts->skip(1) as $data)
                 <div class="col-lg-6 col-md-6 wow fadeInUp mt-3 shadow-lg" data-wow-delay="0.1s">
                     <div class="small text-light px-2 position-absolute" style="background-color: rgba(0,0,0,0.7)">{{ $data->category->nama }}</div>
-                    {{-- <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a> --}}
-                    <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="../img/layar.jpg" alt="..." /></a>
+                    @if ($data->image)   
+                        <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="{{ asset('storage/' . $data->image) }}" alt="..." /></a>
+                    @else
+                        <a href="berita/{{ $data->slug }}"><img class="card-img-top" src="https://picsum.photos/700/350" alt="..." /></a>
+                    @endif
                     <div class="card-body">
                         <div class="small text-muted">{{ $data->updated_at->diffForHumans() }}</div>
                         <h2 class="card-title h4">{{ $data->title }}</h2>
