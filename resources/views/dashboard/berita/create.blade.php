@@ -41,6 +41,7 @@
         </div>
 
         <p style="color:black ">Pilih Gambar</p>
+        <p style="color:black ">Max : 2,5 MB</p>
         <div class="input-group mb-3">
             <input type="file" class="form-control" @error('image') is-invalid @enderror id="image" name="image">
             @error('image')
