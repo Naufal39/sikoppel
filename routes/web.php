@@ -25,13 +25,25 @@ use App\Http\Controllers\indexController;
 
 Route::get('/', [indexController::class, 'index']);
 
+Route::get('/profil-jawabarat', function(){
+    return view('/selayang-pandang/profil-jabar',[
+        "title" => "Selayang Pandang"
+    ]);
+});
+
+Route::get('/profil-dishubjabar', function(){
+    return view('/selayang-pandang/profil-dishubjabar',[
+        "title" => "Selayang Pandang"
+    ]);
+});
+
 Route::get('perizinan', function(){
     return view('/perizinan/index2',[
         "title" => "Perizinan"
     ]);
 });
 
-Route::get('perizinan2', function(){
+Route::get('/perizinan2', function(){
     return view('/perizinan/index2',[
         "title" => "Perizinan"
     ]);

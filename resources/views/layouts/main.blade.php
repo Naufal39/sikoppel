@@ -115,8 +115,8 @@
                                         <div class="col-megamenu">
                                             <h3 class="title">Profil</h3>
                                             <ul class="list-unstyled">
-                                                <li style="padding-bottom: 6px;"><a href="#">Provinsi Jawa Barat</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Dinas Perhubungan Prov. Jawa Barat</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="/profil-jawabarat">Provinsi Jawa Barat</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="/profil-dishubjabar">Dinas Perhubungan Prov. Jawa Barat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">UPTD PPP Pelabuhan Laut</a></li>
                                             </ul>
                                         </div>  <!-- col-megamenu.// -->
