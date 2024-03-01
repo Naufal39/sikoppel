@@ -9,10 +9,14 @@
 <!-- Page Header End -->
 
 <!-- Isi Berita -->
-<div class="container-fluid py-5">
+<div class="container-fluid">
     <div class="container">
         <div class="row">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <center>
+                <img src="{{ asset('img/gedung-sate2.png') }}" alt="" class="mt-3" style="max-width: 50%;">
+                <p style="font-size: 11px;">src: https://www.pngtree.com/</p>
+            </center>
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#luasdanbataswilayah" type="button" role="tab" aria-controls="home" aria-selected="true">Luas dan Batas Wilayah</button>
                 </li>

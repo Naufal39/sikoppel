@@ -13,12 +13,12 @@
     <div class="container">
         <div class="row">
             <div style="color: black">
-                <p style="font-weight: 300">1.	Tugas, Fungsi dan Struktur Organisasi</p>
+                <p style="font-weight: 300">Tugas, Fungsi dan Struktur Organisasi</p>
               <p>Berdasarkan Undang-Undang Nomor 23 Tahun 2014 tentang Pemerintahan Daerah memasukkan urusan perhubungan menjadi urusan wajib yang tidak berkaitan dengan pelayanan dasar. Penyelenggaraan pemerintahan daerah termasuk penyelenggaraan perhubungan di daerah, memerlukan penyesuaian- penyesuaian tugas pokok dan fungsi sebagai dampak penyesuaian urusan/ kewenangan berdasarkan UU No. 23 Tahun 2014.</p>
               <p>Dinas Perhubungan Pemerintah Daerah Provinsi Jawa Barat dibentuk dengan Peraturan Daerah Provinsi Jawa Barat Nomor 6 Tahun 2016 tentang pembentukan dan Susunan Perangkat Daerah Provinsi Jawa Barat, serta dalam menyelenggarakan urusan dilingkungan Pemerintah Daerah Provinsi Jawa Barat ditetapkan dengan Peraturan Daerah Provinsi Jawa Barat Nomor 9 Tahun 2017 tentang Penyelenggaraan Urusan Pemerintah Daerah. Selanjutnya atas dasar peraturan daerah tersebut ditetapkan Peraturan Gubernur Jawa Barat Nomor 45 Tahun 2016 tentang kedudukan dan Susunan Organisasi Perangkat Daerah Provinsi Jawa Barat.</p>
               <p>Tugas pokok, dan fungsi Dinas Perhubungan Provinsi Jawa Barat berdasarkan Peraturan Gubernur Jawa Barat Nomor 59 Tahun 2016 Tentang Tugas Pokok, Fungsi, Rincian Tugas Unit Dan Tata Kerja Dinas Perhubungan Provinsi Jawa Barat, adalah sebagai berikut:</p>
             </div>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#tugaspokok" type="button" role="tab" aria-controls="home" aria-selected="true">Tugas Pokok</button>
                 </li>
