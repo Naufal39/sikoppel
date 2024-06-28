@@ -106,3 +106,23 @@ Route::get('/dashboard/berita/{berita:slug}/edit', [DashboardPostController::cla
 Route::delete('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'destroy'])->middleware('auth');
 Route::put('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'update'])->middleware('auth');
 Route::get('/dashboard/berita/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
+
+//Data Dan Informasi
+//Aktivitas dan Fasilitas Pelabuhan
+Route::get('/ppatimban', function () {
+    return view('/informasipelabuhan/data-dan-informasi/fasilitas-aktivitas-pelabuhan/patimban', [
+        "title" => "Pelabuhan Patimban"
+    ]);    
+});
+
+Route::get('/pp-ppangandaran', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/pangandaran', [
+        "title" => "Pelabuhan Pangandaran"
+    ]);    
+});
+
+Route::get('/pp-tasikmalaya', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/tasikmalaya', [
+        "title" => "Kab. Tasikmalaya"
+    ]);    
+});
