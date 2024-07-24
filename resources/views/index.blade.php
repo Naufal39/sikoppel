@@ -65,8 +65,8 @@
                 <!-- 16:9 aspect ratio -->
                 <div class="ratio ratio-16x9" id="welcomeVid">
                     <video controls autoplay>
-                        <source src="vid/hawaii.mp4" type="video/mp4">
-                        <source src="vid/hawaii.ogg" type="video/ogg">
+                        <source src="vid/welcomevid1.mp4" type="video/mp4">
+                        <source src="vid/welcomevid1.ogg" type="video/ogg">
                             <iframe src="" allow="autoplay" frameborder="0"></iframe>
                         Browsermu tidak mendukung tag ini, upgrade donk!
                       </video>
