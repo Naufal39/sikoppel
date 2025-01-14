@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Red+Rose:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
@@ -77,12 +78,10 @@
                         <span>(0231) 8803744</span>
                     </div>
                 </div>
-                <!-- <a href="index.html" class="h1 text-white mb-0">SI<span class="text-dark">Koppel</span></a> -->
-                <a href="index.html" class="h1" style="color: red">S
-                    <span style="color: yellow">I</span>
-                    <span style="color: green">KO</span>
-                    <span style="color: purple">P</span>
-                    <span style="color: blue">PEL</span></a>
+                {{-- <a href="index.html"> --}}
+                <img src="{{ asset('img/tulisan.png') }}" alt="" class="mt-3" style="max-width: 30%;">
+                {{-- </a> --}}
+
                 <div class="d-flex">
                     <i class="bi bi-envelope fs-2"></i>
                     <div class="ms-3">
@@ -126,7 +125,8 @@
                                                         Jawa Barat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="/profil-dishubjabar">Dinas
                                                         Perhubungan Prov. Jawa Barat</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="/profil-uptdlaut">UPTD PPP Pelabuhan
+                                                <li style="padding-bottom: 6px;"><a href="/profil-uptdlaut">UPTD PPP
+                                                        Pelabuhan
                                                         Laut</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
@@ -241,7 +241,8 @@
                                             <ul class="list-unstyled">
                                                 <li style="padding-bottom: 6px;"><a href="#">Perusahaan
                                                         Pelayaran Lokal</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="../p-bongkarmuat">Perusahaan Bongkar
+                                                <li style="padding-bottom: 6px;"><a href="p-bongkarmuat">Perusahaan
+                                                        Bongkar
                                                         Muat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Perusahaan Jasa
                                                         Pengurusan Transportasi</a></li>
@@ -319,8 +320,8 @@
         <div class="container">
             <div class="row g-5 py-5">
                 <div class="col-lg-6 pe-lg-5">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="h1 text-primary mb-0">SI<span class="text-white">Koppel</span></h1>
+                    <a href="index.html">
+                        <img src="{{ asset('img/tulisan.png') }}" alt="" style="max-width: 50%;">
                     </a>
                     <p class="fs-5 mb-4">Sistem Informasi Konsultasi Pengelolaan Pelabuhan Laut</p>
                     <p><i class="fa fa-map-marker-alt me-2"></i>Jl. Brigjen Darsono No. 16, Kedawung, Kab. Cirebon</p>
