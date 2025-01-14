@@ -122,7 +122,7 @@
                                                         Jawa Barat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="/profil-dishubjabar">Dinas
                                                         Perhubungan Prov. Jawa Barat</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">UPTD PPP Pelabuhan
+                                                <li style="padding-bottom: 6px;"><a href="/profil-uptdlaut">UPTD PPP Pelabuhan
                                                         Laut</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->

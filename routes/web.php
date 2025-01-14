@@ -37,6 +37,12 @@ Route::get('/profil-dishubjabar', function(){
     ]);
 });
 
+Route::get('/profil-uptdlaut', function(){
+    return view('/selayang-pandang/profil-uptdlaut',[
+        "title" => "Selayang Pandang"
+    ]);
+});
+
 Route::get('perizinan', function(){
     return view('/perizinan/index2',[
         "title" => "Perizinan"
