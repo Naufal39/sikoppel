@@ -17,8 +17,8 @@
                     {{-- <p style="font-size: 11px;">src: https://www.pngtree.com/</p> --}}
                 </center>
                 <div style="color: black; margin-top: 2%;">
-                    <p style="font-size:16px;font-family:Bookman Old Style,serif;">ANALISA DATA DI KABUPATEN TASIKMALAYA</p>
-                    <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">Kegiatan survei yang
+                    <p>ANALISA DATA DI KABUPATEN TASIKMALAYA</p>
+                    <p>Kegiatan survei yang
                         dilakukan di Kabupaten Tasikmalaya oleh tim survei pendataan potensi muatan Pelabuhan Pangandaran
                         dilakukan pada tanggal 25 November 2022. Tujuan lokasi survei di Kabupaten Tasikmalaya hampir sama
                         diantaranya Dinas Koperasi, UKM, Perdagangan & Perindustrian, Dinas Pariwisata, Dinas Ketahanan
@@ -43,10 +43,10 @@
                     </li>
                 </ul>
 
-                <div class="tab-content fs-5" id="myTabContent" style="text-align: justify; color:black">
+                <div class="tab-content " id="myTabContent" style="text-align: justify; color:black">
                     {{-- DATA KAUKM --}}
                     <div class="tab-pane fade show active" id="datakukm" role="tabpanel" aria-labelledby="home-tab">
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Dalam kegiatan survei ke Kabupaten Tasikmalaya, salah satunya ke Dinas KUKM dan Perindustrian
                             Kab. Tasikmalaya didapatkan data profil perusahaan khususnya perusahaan yang melakukan kegiatan
                             ekspor dari Kab. Tasikmalaya. Terdapat 7 perusahaan ekspor yang terdata dengan proporsi 5
@@ -702,7 +702,7 @@
 
                     {{-- DATA PERDAGANGAN --}}
                     <div class="tab-pane fade" id="dataperdagangan" role="tabpanel" aria-labelledby="contact-tab">
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Berdasarkan data di bawah ini, komoditas handicraft, craft, garment dan manggis menjadi
                             komoditas unggulan di Kabupaten tasikmalaya. Mayoritas komoditas garment di Kabupaten
                             Tasikmalaya memiliki tujuan yaitu negara Jepang. Sementara untuk komoditas manggis di Kabupaten
@@ -1035,7 +1035,7 @@
                     {{-- DATA PARIWISATA --}}
                     <div class="tab-pane fade" id="datapeternakan" role="tabpanel"
                         aria-labelledby="home-tab" style="">
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Pada tahun 2021 berdasarkan data yang didapatkan oleh tim survei dari Dinas Ketahanan Pangan,
                             Pertanian dan Perikanan Kabupaten Tasikmalaya, total produksi komoditas padi tercatat mencapai
                             819.386 ton. Besaran produksi tersebut, didapatkan dari luasan panen sebesar 119.940 hektar. Dar
@@ -17903,13 +17903,13 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Data selanjutnya yang juga output dari hasil survei ke Dinas Ketahanan Pangan, Pertanian dan Perkanan Kabupaten Tasikmalaya adalah data produksi untuk sektor perkebunan. Sesuai dengan tabel di atas, dari 22 jenis komoditas buah-buahan yang telah tercatat menghasilkan total produksi komoditas buah-buahan sebesar 169.319 ton. Kecamatan Salopo menjadi kecamatan dengan produksi terbesar yaitu degan total 19.590 ton, kemudian diikuti oleh kecamatan Cipatujah dengan total produksi sebesar 18.826 ton dan Kecamatan Jatiwaras pada posisi ketiga dengan total produksi sebsar 10.791 ton.
                         </p>
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Informasi lainnya yang dapat disimpulkan dari 22 komoditas buah-buahan yang tercatat pada tahun 2021, sesuai dengan tabel di atas, telah dikelompokkan kembali menjadi 10 komoditas buah-buahan dengan produksi terbesar pada tahun 2021. Dalam daftar 10 komoditas unggulan tersebut terdapat buah alpukat, durian, mangga, manggis, rambutan, sirsak, pisang, pepaya, petai dan salak. Buah Pisang pada tahun 2021 tercatat memiliki produksi terbesar diantara 10 komoditas unggulan dengan 108.227 ton. Kemudian buah pepaya menjadi komoditas kedua dengan produksi terbesar yaitu 8.642 ton dan selanjutnya diikuti komoditas manggis yang pada tahun 2021 tercatat sebesar 7.833 ton.
                         </p>
-                        <p style="font-size:16px;font-family:Bookman Old Style,serif; text-align:justify;">
+                        <p>
                             Pada Tabel dibawah ini, dijabarkan pula produksi untuk sektor perkebunan di Kabupaten Tasikmalaya. Tercatat hasil produksi perkebunan pada tahun 2021 mencapai 29.848 ton. Dari total 29.848 ton, komoditas kelapa menyumbang hampir 92% dari total produksi atau tercatat sebesar 27.574 pada tahun 2021. Enam komoditas lainnya yaitu Karet, kelapa Sawit, Kopi Arabica, Kopi Robusta, Lada dan Kakao hanya menyumbang dibawah 5% dari tital produksi sektor perkebunan.
                         </p>
                         <table style="border: none;width:100.0%;border-collapse:collapse;margin-top:2%">

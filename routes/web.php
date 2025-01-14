@@ -132,3 +132,9 @@ Route::get('/pp-tasikmalaya', function () {
         "title" => "Kab. Tasikmalaya"
     ]);    
 });
+
+Route::get('/p-bongkarmuat', function () {
+    return view('/informasipelabuhan/data-dan-informasi/perusahaan-penunjang-angkutan-laut/perusahaan-bongkar-muat', [
+        "title" => "Perusahaan Bongkar Muat"
+    ]);    
+});
