@@ -1,49 +1,54 @@
 @extends('layouts/main')
 
 @section('isihalaman')
-<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container text-center py-5 mt-4">
-        <h1 class="display-2 text-white mb-3 animated slideInDown">{{ $post["title"] }}</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb justify-content-center mb-0">
-                <a href="../berita?user={{ $post->user->username }}"><li class="breadcrumb-item" aria-current="page">Penulis : {{ $post->user->name }}</li></a>
-            </ol>
-            <ol class="breadcrumb justify-content-center mb-0">
-                <li class="breadcrumb-item" aria-current="page"><a href="../berita?category={{ $post->category->slug }}">Kategori : {{ $post->category->nama }}</a></li>
-            </ol>
-        </nav>
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5 mt-4">
+            <h1 class="display-2 text-white mb-3 animated slideInDown">{{ $post['title'] }}</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <a href="../berita?user={{ $post->user->username }}">
+                        <li class="breadcrumb-item" aria-current="page">Penulis : {{ $post->user->name }}</li>
+                    </a>
+                </ol>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item" aria-current="page"><a
+                            href="../berita?category={{ $post->category->slug }}">Kategori : {{ $post->category->nama }}</a>
+                    </li>
+                </ol>
+            </nav>
+        </div>
     </div>
-</div>
-<!-- Page Header End -->
+    <!-- Page Header End -->
 
-<!-- Isi Berita -->
-<div class="container-fluid py-5">
-    <div class="container">
-        <div class="row">
-            @if ($post->image)
-                <img src="{{ asset('storage/' . $post->image) }}" alt="rakornis">
-            @else
-                <p>   </p>
-            @endif
-            <div class="col-md-8">
-                <p style="text-align: justify; color: black; font-family: Arial, Helvetica, sans-serif;">
-                    {!! $post["body"] !!} 
-               </p>
-            </div>
-            <div class="col-md-4 py-3">
-                <div class="card border-dark mb-3" style="max-width: 18rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body text-primary">
-                      <h5 class="card-title">Primary card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <!-- Isi Berita -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                @if ($post->image)
+                    <img src="{{ asset('storage/' . $post->image) }}" alt="rakornis">
+                @else
+                    <p> </p>
+                @endif
+                <div class="col-md-8 text-dark">
+                    <p style="text-align: justify; color: black; font-family: Arial, Helvetica, sans-serif;">
+                        {!! $post['body'] !!}
+                    </p>
+                </div>
+                <div class="col-md-4 py-3">
+                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-primary">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                        </div>
                     </div>
-                  </div>
+                </div>
+
             </div>
-            
-              </div>
-        </div> 
-    </div>        
-</div>
+        </div>
+    </div>
+    </div>
 @endsection
 
 {{-- Berita::create([
