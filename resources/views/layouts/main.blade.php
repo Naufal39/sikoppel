@@ -116,11 +116,11 @@
                             <a class="nav-link dropdown-toggle {{ $title === 'Selayang Pandang' ? 'active' : '' }}"
                                 href="#" data-bs-toggle="dropdown"> Selayang Pandang </a>
                             <div class="dropdown-menu megamenu" role="menu">
-                                <div class="row justify-content-center text-center shadow-lg">
+                                <div class="row justify-content-around shadow-lg">
                                     <div class="col-md-2" style="width: auto">
                                         <div class="col-megamenu">
-                                            <h3 class="title">Profil</h3>
-                                            <ul class="list-unstyled">
+                                            <h3 class="title text-center">Profil</h3>
+                                            <ul class="list-group-numbered" style="color:#3368c6">
                                                 <li style="padding-bottom: 6px;"><a href="/profil-jawabarat">Provinsi
                                                         Jawa Barat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="/profil-dishubjabar">Dinas
@@ -141,9 +141,9 @@
                                     </div><!-- end col-3 -->
                                     <div class="col-md-2" style="width: auto">
                                         <div class="col-megamenu">
-                                            <h3 class="title m-0">Potensi Pelabuhan</h3>
-                                            <h3 class="m-0">di Jawa Barat</h3>
-                                            <ul class="list-unstyled">
+                                            <h3 class="title m-0 text-center">Potensi Pelabuhan</h3>
+                                            <h3 class="m-0 text-center">di Jawa Barat</h3>
+                                            <ul class="list-group-numbered" style="color:#3368c6">
                                                 <li style="padding-bottom: 6px;"><a href="#">Dishub Kab.
                                                         Pangandaran</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Dishub Kab.
@@ -162,7 +162,8 @@
                                                         Subang</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Dishub Kab.
                                                         Karawang</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Dishub Kab.
+                                                <li style="padding-bottom: 6px;"><a href="/potensi-indramayu">Dishub
+                                                        Kab.
                                                         Indramayu</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Dishub Kab.
                                                         Cianjur</a></li>
@@ -186,11 +187,12 @@
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Data dan
                                 Informasi </a>
                             <div class="dropdown-menu megamenu" role="menu">
-                                <div class="row justify-content-center text-center shadow-lg">
+                                <div class="row justify-content-around shadow-lg">
                                     <div class="col-md-2" style="width: auto">
                                         <div class="col-megamenu">
-                                            <h5 class="title">Potensi dan Pemanfaatan Pelabuhan</h5>
-                                            <ul class="list-unstyled">
+                                            <h5 class="title text-center">Potensi dan Pemanfaatan Pelabuhan</h5>
+                                            <ul class="list-group-numbered"
+                                                style="color:#3368c6; padding-inline-start: 30%">
                                                 <li style="padding-bottom: 6px;"><a href="../pp-ppangandaran">Kab.
                                                         Pangandaran</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Kab. Sukabumi</a>
@@ -208,7 +210,8 @@
                                                 </li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Kab. Karawang</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Indramayu</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-pindramayu">Kab.
+                                                        Indramayu</a>
                                                 </li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Kab. Cianjur</a>
                                                 </li>
@@ -218,9 +221,9 @@
 
                                     <div class="col-md-2" style="width: auto">
                                         <div class="col-megamenu">
-                                            <h5 class="title">Fasilitas dan Aktivitas</h5>
-                                            <h5 class="title">Operasional Pelabuhan</h5>
-                                            <ul class="list-unstyled">
+                                            <h5 class="title text-center">Fasilitas dan Aktivitas</h5>
+                                            <h5 class="title text-center">Operasional Pelabuhan</h5>
+                                            <ul class="list-group-numbered" style="color:#3368c6">
                                                 <li style="padding-bottom: 6px;"><a href="../ppatimban">Pelabuhan
                                                         Patimban</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Pelabuhan
@@ -236,9 +239,10 @@
                                     </div><!-- end col-3 -->
                                     <div class="col-md-2" style="width: auto">
                                         <div class="col-megamenu">
-                                            <h5 class="title">Perusahaan Penunjang</h5>
-                                            <h5 class="title">Angkutan Laut</h5>
-                                            <ul class="list-unstyled">
+                                            <h5 class="title text-center">Perusahaan Penunjang</h5>
+                                            <h5 class="title text-center">Angkutan Laut</h5>
+                                            <ul class="list-group-numbered"
+                                                style="color:#3368c6; padding-inline-start: 15%">
                                                 <li style="padding-bottom: 6px;"><a href="#">Perusahaan
                                                         Pelayaran Lokal</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="p-bongkarmuat">Perusahaan

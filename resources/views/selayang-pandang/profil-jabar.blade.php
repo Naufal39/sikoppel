@@ -39,9 +39,9 @@
                             role="tab" aria-controls="contact" aria-selected="false">Pertumbuhan PDRB</button>
                     </li>
                 </ul>
-                <div class="tab-content fs-5 text-dark" id="myTabContent" style="text-align: justify">
+                <div class="tab-content fs-5" id="myTabContent" style="text-align: justify">
                     <div class="tab-pane fade show active" id="luasdanbataswilayah" role="tabpanel"
-                        aria-labelledby="home-tab" style="">
+                        aria-labelledby="home-tab" style="color:black">
                         <center>
                             <img src="{{ asset('img/peta-jawa-barat.jpg') }}" alt="" class="mt-3"
                                 style="max-width: 50%;">

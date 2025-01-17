@@ -25,32 +25,15 @@ use App\Http\Controllers\indexController;
 
 Route::get('/', [indexController::class, 'index']);
 
-Route::get('/profil-jawabarat', function(){
-    return view('/selayang-pandang/profil-jabar',[
-        "title" => "Selayang Pandang"
-    ]);
-});
 
-Route::get('/profil-dishubjabar', function(){
-    return view('/selayang-pandang/profil-dishubjabar',[
-        "title" => "Selayang Pandang"
-    ]);
-});
-
-Route::get('/profil-uptdlaut', function(){
-    return view('/selayang-pandang/profil-uptdlaut',[
-        "title" => "Selayang Pandang"
-    ]);
-});
-
-Route::get('perizinan', function(){
-    return view('/perizinan/index2',[
+Route::get('perizinan', function () {
+    return view('/perizinan/index2', [
         "title" => "Perizinan"
     ]);
 });
 
-Route::get('/perizinan2', function(){
-    return view('/perizinan/index2',[
+Route::get('/perizinan2', function () {
+    return view('/perizinan/index2', [
         "title" => "Perizinan"
     ]);
 });
@@ -59,13 +42,13 @@ Route::get('/perizinan2', function(){
 Route::get('/ppatimban', function () {
     return view('/informasipelabuhan/ppatimban', [
         "title" => "Pelabuhan Patimban"
-    ]);    
+    ]);
 });
 
 Route::get('/pcirebon', function () {
     return view('/informasipelabuhan/pcirebon', [
         "title" => "Pelabuhan Cirebon"
-    ]);    
+    ]);
 });
 // end informasi pelabuhan 
 
@@ -96,11 +79,11 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'daftar']);
 
-Route::get('/dashboard', function(){
+Route::get('/dashboard', function () {
     return view('dashboard/index');
 })->middleware('auth');
 
-Route::get('/faq', function(){
+Route::get('/faq', function () {
     return view('faq', [
         'title' => 'faq'
     ]);
@@ -118,23 +101,56 @@ Route::get('/dashboard/berita/checkSlug', [DashboardPostController::class, 'chec
 Route::get('/ppatimban', function () {
     return view('/informasipelabuhan/data-dan-informasi/fasilitas-aktivitas-pelabuhan/patimban', [
         "title" => "Pelabuhan Patimban"
-    ]);    
+    ]);
 });
 
 Route::get('/pp-ppangandaran', function () {
     return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/pangandaran', [
         "title" => "Pelabuhan Pangandaran"
-    ]);    
+    ]);
+});
+
+Route::get('/pp-pindramayu', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/indramayu', [
+        "title" => "Pelabuhan Indramayu"
+    ]);
 });
 
 Route::get('/pp-tasikmalaya', function () {
     return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/tasikmalaya', [
         "title" => "Kab. Tasikmalaya"
-    ]);    
+    ]);
 });
 
 Route::get('/p-bongkarmuat', function () {
     return view('/informasipelabuhan/data-dan-informasi/perusahaan-penunjang-angkutan-laut/perusahaan-bongkar-muat', [
         "title" => "Perusahaan Bongkar Muat"
-    ]);    
+    ]);
 });
+
+// SELAYANG PANDANG
+Route::get('/potensi-indramayu', function () {
+    return view('/selayang-pandang/potensi-pelabuhan/indramayu', [
+        "title" => "Dishub Indramayu"
+    ]);
+});
+
+Route::get('/profil-jawabarat', function () {
+    return view('/selayang-pandang/profil-jabar', [
+        "title" => "Selayang Pandang"
+    ]);
+});
+
+Route::get('/profil-dishubjabar', function () {
+    return view('/selayang-pandang/profil-dishubjabar', [
+        "title" => "Selayang Pandang"
+    ]);
+});
+
+Route::get('/profil-uptdlaut', function () {
+    return view('/selayang-pandang/profil-uptdlaut', [
+        "title" => "Selayang Pandang"
+    ]);
+});
+
+// END SELAYANG PANDANG
