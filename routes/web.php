@@ -110,6 +110,54 @@ Route::get('/pp-ppangandaran', function () {
     ]);
 });
 
+Route::get('/pp-sukabumi', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/sukabumi', [
+        "title" => "Kab. Sukabumi"
+    ]);
+});
+
+Route::get('/pp-kota-cirebon', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kota-cirebon', [
+        "title" => "Kota. Cirebon"
+    ]);
+});
+
+Route::get('/pp-kab-cirebon', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-cirebon', [
+        "title" => "Kab. Cirebon"
+    ]);
+});
+
+Route::get('/pp-kab-garut', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-garut', [
+        "title" => "Kab. Garut"
+    ]);
+});
+
+Route::get('/pp-kab-bekasi', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-bekasi', [
+        "title" => "Kab. Bekasi"
+    ]);
+});
+
+Route::get('/pp-kab-subang', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-subang', [
+        "title" => "Kab. Subang"
+    ]);
+});
+
+Route::get('/pp-kab-karawang', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-karawang', [
+        "title" => "Kab. Karawang"
+    ]);
+});
+
+Route::get('/pp-kab-cianjur', function () {
+    return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/kab-cianjur', [
+        "title" => "Kab. Cianjur"
+    ]);
+});
+
 Route::get('/pp-pindramayu', function () {
     return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/indramayu', [
         "title" => "Pelabuhan Indramayu"

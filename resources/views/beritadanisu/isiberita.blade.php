@@ -24,26 +24,43 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row">
-                @if ($post->image)
-                    <img src="{{ asset('storage/' . $post->image) }}" alt="rakornis">
-                @else
-                    <p> </p>
-                @endif
-                <div class="col-md-8 text-dark">
-                    <p style="text-align: justify; color: black; font-family: Arial, Helvetica, sans-serif;">
+                <div class="col-8">
+                    @if ($post->image)
+                        <img style="max-width: 100%" src="{{ asset('storage/' . $post->image) }}" alt="rakornis">
+                    @else
+                        <p> </p>
+                    @endif
+                    <p class="text-dark"
+                        style="text-align: justify; color: black; font-family: Arial, Helvetica, sans-serif;">
                         {!! $post['body'] !!}
                     </p>
                 </div>
-                <div class="col-md-4 py-3">
-                    <div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-primary">
-                            <h5 class="card-title">Primary card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
+
+
+
+                <div class="col-4" style="max-width: 25%; height: 80%">
+                    @foreach ($sideberita as $data)
+                        <a href="../berita/{{ $data->slug }}">
+                            <div class="card bg-dark text-white">
+                                @if ($data->image)
+                                    <img style="max-height: 550px" src="{{ asset('storage/' . $data->image) }}"
+                                        class="card-img img-thumbnail" alt="...">
+                                @else
+                                    <img style="max-height: 550px" src="https://picsum.photos/700/350"
+                                        class="card-img img-thumbnail" alt="...">
+                                @endif
+
+                                <div class="card-img-overlay">
+                                    <h6 class="card-title">{{ $data->title }}</h6>
+                                    <p class="card-text" style="font-size: 10px">{{ $data->excerpt }}</p>
+                                    <p class="card-text" style="font-size: 10px">Last updated
+                                        {{ $data->updated_at->diffForHumans() }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    @endforeach
                 </div>
+
 
             </div>
         </div>

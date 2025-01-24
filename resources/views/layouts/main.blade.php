@@ -195,25 +195,33 @@
                                                 style="color:#3368c6; padding-inline-start: 30%">
                                                 <li style="padding-bottom: 6px;"><a href="../pp-ppangandaran">Kab.
                                                         Pangandaran</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Sukabumi</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-sukabumi">Kab.
+                                                        Sukabumi</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kota Cirebon</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kota-cirebon">Kota
+                                                        Cirebon</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Cirebon</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-cirebon">Kab.
+                                                        Cirebon</a>
                                                 </li>
                                                 <li style="padding-bottom: 6px;"><a href="../pp-tasikmalaya">Kab.
                                                         Tasikmalaya</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Garut</a></li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Bekasi</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-garut">Kab.
+                                                        Garut</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-bekasi">Kab.
+                                                        Bekasi</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Subang</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-subang">Kab.
+                                                        Subang</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Karawang</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-karawang">Kab.
+                                                        Karawang</a>
                                                 </li>
                                                 <li style="padding-bottom: 6px;"><a href="../pp-pindramayu">Kab.
                                                         Indramayu</a>
                                                 </li>
-                                                <li style="padding-bottom: 6px;"><a href="#">Kab. Cianjur</a>
+                                                <li style="padding-bottom: 6px;"><a href="../pp-kab-cianjur">Kab.
+                                                        Cianjur</a>
                                                 </li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
