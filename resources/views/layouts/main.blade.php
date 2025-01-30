@@ -135,7 +135,9 @@
                                         <div class="col-megamenu">
                                             <h3 class="title">Hukum</h3>
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Dasar Hukum</a></li>
+                                                <li><a target="_blank" rel="noopener noreferrer"
+                                                        href="https://jdih.kemenhub.go.id/peraturan/index?PencarianPeraturanForm%5BkataKunci%5D=pelabuhan&PencarianPeraturanForm%5BkataKunciM%5D=&pencarian-cepat-button=Cari&PencarianPeraturanForm%5BnomorPeraturan%5D=&PencarianPeraturanForm%5BtahunPeraturan%5D=&PencarianPeraturanForm%5BjenisPeraturan%5D=">Dasar
+                                                        Hukum</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
@@ -242,6 +244,8 @@
                                                         Pelabuhanratu</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Pelabuhan
                                                         Indramayu</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Pelabuhan
+                                                        Marunda</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
@@ -258,6 +262,8 @@
                                                         Muat</a></li>
                                                 <li style="padding-bottom: 6px;"><a href="#">Perusahaan Jasa
                                                         Pengurusan Transportasi</a></li>
+                                                <li style="padding-bottom: 6px;"><a href="#">Laporan Bulanan
+                                                        Perusahaan</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
@@ -289,10 +295,16 @@
                         <div class="nav-item dropdown">
                             <a href="#"
                                 class="nav-link dropdown-toggle {{ Request::is('berita') ? 'active' : '' }}"
-                                data-bs-toggle="dropdown">Berita dan Isu</a>
+                                data-bs-toggle="dropdown">Informasi</a>
                             <div class="dropdown-menu bg-light m-0">
-                                <a href="/ppatimban" class="dropdown-item">Kondisi Cuaca</a>
-                                <a href="/pcirebon" class="dropdown-item"> Kondisi Gelombang </a>
+                                <a href="https://www.bmkg.go.id/cuaca/maritim/pelabuhan" class="dropdown-item"
+                                    target="_blank" rel="noopener noreferrer">Kondisi
+                                    Cuaca Pelabuhan</a>
+                                <a href="https://www.bmkg.go.id/cuaca/maritim" class="dropdown-item" target="_blank"
+                                    rel="noopener noreferrer">Kondisi
+                                    Cuaca Perairan</a>
+                                <a href="https://maritim.bmkg.go.id/peringatan/gelombang_tinggi" class="dropdown-item"
+                                    target="_blank" rel="noopener noreferrer"> Peringatan Gelombang Tinggi </a>
                                 <a href="/berita" class="dropdown-item"> Berita Publikasi </a>
                             </div>
                         </div>

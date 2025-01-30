@@ -36,10 +36,37 @@
                     </p>
                 </div>
 
+                <div class="col-4" style="max-width: 50%; height: 80%">
+                    <div class="card mb-4 shadow-lg">
+                        <div class="card-header">Pencarian</div>
+                        <div class="card-body">
+                            <form action="/berita">
+                                <div class="input-group">
+                                    @if (request('category'))
+                                        <input type="hidden" name="category" value="{{ request('category') }}">
+                                    @endif
+                                    <input class="form-control" type="text" placeholder="Enter search term..."
+                                        name="search" value="{{ request('search') }}">
+                                    <button class="btn btn-primary" type="submit">Go!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
-
-                <div class="col-4" style="max-width: 25%; height: 80%">
-                    @foreach ($sideberita as $data)
+                    <div class="list-group">
+                        @foreach ($sideberita as $data)
+                            <a href="../berita/{{ $data->slug }}" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">{{ $data->title }}</h5>
+                                    <small class="text-muted">{{ $data->updated_at->diffForHumans() }}</small>
+                                </div>
+                                <p class="mb-1">{{ $data->excerpt }}</p>
+                                <small class="text-muted">{{ $data->category->nama }}</small>
+                            </a>
+                        @endforeach
+                    </div>
+                </div>
+                {{-- @foreach ($sideberita as $data)
                         <a href="../berita/{{ $data->slug }}">
                             <div class="card bg-dark text-white">
                                 @if ($data->image)
@@ -58,12 +85,12 @@
                                 </div>
                             </div>
                         </a>
-                    @endforeach
-                </div>
-
-
+                    @endforeach --}}
             </div>
+
+
         </div>
+    </div>
     </div>
     </div>
 @endsection

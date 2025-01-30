@@ -4,13 +4,14 @@ use App\Models\User;
 use App\Models\berita;
 use App\Models\Category;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\indexController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\beritaController;
+use App\Http\Controllers\LapbulController;
 use App\Http\Controllers\categoryController;
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardPostController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\indexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -51,6 +52,9 @@ Route::get('/pcirebon', function () {
     ]);
 });
 // end informasi pelabuhan 
+
+//laporan bulanan perusahaan
+
 
 //berita
 Route::get('/berita', [beritaController::class, 'index']);
@@ -95,6 +99,9 @@ Route::get('/dashboard/berita/{berita:slug}/edit', [DashboardPostController::cla
 Route::delete('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'destroy'])->middleware('auth');
 Route::put('/dashboard/berita/{berita:slug}', [DashboardPostController::class, 'update'])->middleware('auth');
 Route::get('/dashboard/berita/checkSlug', [DashboardPostController::class, 'checkSlug'])->middleware('auth');
+
+Route::resource('/dashboard/laporan-bulanan', LapbulController::class)->except(['show', 'destroy', 'edit', 'update'])->middleware('auth');
+Route::delete('/dashboard/laporan-bulanan/{file:id}', [LapbulController::class, 'destroy'])->middleware('auth');
 
 //Data Dan Informasi
 //Aktivitas dan Fasilitas Pelabuhan
