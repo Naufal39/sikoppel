@@ -24,7 +24,7 @@
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row">
-                <div class="col-8">
+                <div class="col-8" style="text-align: justify">
                     @if ($post->image)
                         <img style="max-width: 100%" src="{{ asset('storage/' . $post->image) }}" alt="rakornis">
                     @else
@@ -36,7 +36,7 @@
                     </p>
                 </div>
 
-                <div class="col-4" style="max-width: 50%; height: 80%">
+                <div class="col-4" style="max-width: 50%; height: 80%;">
                     <div class="card mb-4 shadow-lg">
                         <div class="card-header">Pencarian</div>
                         <div class="card-body">

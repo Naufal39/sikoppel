@@ -111,6 +111,12 @@ Route::get('/ppatimban', function () {
     ]);
 });
 
+Route::get('/pmarunda', function () {
+    return view('/informasipelabuhan/data-dan-informasi/fasilitas-aktivitas-pelabuhan/marunda', [
+        "title" => "Pelabuhan Marunda"
+    ]);
+});
+
 Route::get('/pp-ppangandaran', function () {
     return view('/informasipelabuhan/data-dan-informasi/potensi-pelabuhan/pangandaran', [
         "title" => "Pelabuhan Pangandaran"

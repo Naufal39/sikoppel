@@ -23,12 +23,12 @@ class LapbulController extends Controller
                 'perusahaan' => User::where('is_comp', '1')->get(),
                 'bulan' => Bulan::all(),
                 'tahun' => Tahun::all(),
-                'posts' => File::filter(request(['perusahaan', 'tahun']))->get(),
+                'posts' => File::filter(request(['perusahaan', 'tahun']))->orderBy('bulan_id', 'asc')->get(),
                 'title' => $title
             ]);
         } else {
             return view('dashboard.laporan.index', [
-                'posts' => File::where('user_id', auth()->user()->id)->filter(request(['tahun']))->get(),
+                'posts' => File::where('user_id', auth()->user()->id)->filter(request(['tahun']))->orderBy('bulan_id', 'asc')->get(),
                 'perusahaan' => User::where('is_comp', '1')->get(),
                 'bulan' => Bulan::all(),
                 'tahun' => Tahun::all(),

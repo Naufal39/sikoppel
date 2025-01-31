@@ -1,29 +1,33 @@
 @extends('layouts/main')
 
 @section('isihalaman')
-  <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container text-center py-5 mt-4">
-        <h1 class="display-2 text-white mb-3 animated slideInDown">Profil UPTD PPP Pelabuhan Laut</h1>
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5 mt-4">
+            <h1 class="display-2 text-white mb-3 animated slideInDown">Profil UPTD PPP Pelabuhan Laut</h1>
+        </div>
     </div>
-</div>
-<!-- Page Header End -->
+    <!-- Page Header End -->
 
-<!-- Isi Berita -->
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <center>
-                <img src="{{ asset('img/gedung-sate2.png') }}" alt="" class="mt-3" style="max-width: 50%;">
-                <p style="font-size: 11px;">src: https://www.pngtree.com/</p>
-            </center>
-            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#visimisi" type="button" role="tab" aria-controls="home" aria-selected="true">Visi dan Misi</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#maklumat" type="button" role="tab" aria-controls="profile" aria-selected="false">Maklumat</button>
-                </li>
-                {{-- <li class="nav-item" role="presentation">
+    <!-- Isi Berita -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <center>
+                    <img src="{{ asset('img/gedung-sate2.png') }}" alt="" class="mt-3" style="max-width: 50%;">
+                    <p style="font-size: 11px;">src: https://www.pngtree.com/</p>
+                </center>
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#visimisi"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">Tugas Pokok dan
+                            Fungsi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#maklumat"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">Maklumat
+                            Pelayanan</button>
+                    </li>
+                    {{-- <li class="nav-item" role="presentation">
                   <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#klimatologi" type="button" role="tab" aria-controls="contact" aria-selected="false">Klimatologi</button>
                 </li>
                 <li class="nav-item" role="presentation">
@@ -32,17 +36,33 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#pdrb" type="button" role="tab" aria-controls="contact" aria-selected="false">Pertumbuhan PDRB</button>
                 </li> --}}
-              </ul>
-              <div class="tab-content fs-5 text-dark" id="myTabContent" style="text-align: justify">
-                  <div class="tab-pane fade show active" id="visimisi" role="tabpanel" aria-labelledby="home-tab" style="">
-                    
-                </div>
-                <div class="tab-pane fade" id="maklumat" role="tabpanel" aria-labelledby="profile-tab">
-                    <center>
-                        <img src="{{ asset('img/maklumat.png') }}" alt="" class="mt-3" style="max-width: 70%; margin-bottom: 5%">
-                    </center>
-                </div>
-                {{-- <div class="tab-pane fade" id="klimatologi" role="tabpanel" aria-labelledby="contact-tab">
+                </ul>
+                <div class="tab-content fs-5 text-dark" id="myTabContent" style="text-align: justify">
+                    <div class="tab-pane fade show active" id="visimisi" role="tabpanel" aria-labelledby="home-tab"
+                        style="">
+                        <p>UPTD Pengelolaan Prasarana Perhubungan Laut mempunyai tugas pokok menyelenggarakan kegiatan
+                            teknis Pelabuhan operasional dan/ atau kegiatan teknis penunjang tertentu di bidang Pengelolaan
+                            Prasarana Perhubungan Pelabuhan Laut meliputi operasi pelabuhan laut dan fasilitas pelabuhan
+                            laut.</p>
+                        <p>Dalam menyelenggarakan tugas pokok sebagaimana dimaksud pada ayat ( 1), UPTD Pengelolaan
+                            Prasarana Pelabuhan Laut mempunyai fungsi:&nbsp;</p>
+                        <p>a. penyelenggaraan pengkajian bahan Perhubungan kebijakan Pengelolaan Prasarana Perhubungan
+                            Pelabuhan Laut;&nbsp;</p>
+                        <p>b. penyelenggaraan Pengelolaan Prasarana teknis Perhubungan Pelabuhan Laut meliputi operasi
+                            pelabuhan laut dan fasilitas pelabuhan laut;&nbsp;</p>
+                        <p>c. penyelenggaraan evaluasi dan pelaporan UPTD Pengelolaan Prasarana Perhubungan Pelabuhan Laut;
+                            dan penyelenggaraan fungsi lain sesuai dengan tugas pokok dan fungsinya.&nbsp;</p>
+                        <p>d. penyelenggaraan fungsi lain sesuai dengan tugas pokok dan fungsinya.&nbsp;</p>
+                        <br><br>
+                        <p style="font-style: italic;">sumber: Peraturan Gubernur no 76 tahun 2017</p>
+                    </div>
+                    <div class="tab-pane fade" id="maklumat" role="tabpanel" aria-labelledby="profile-tab">
+                        <center>
+                            <img src="{{ asset('img/maklumat.png') }}" alt="" class="mt-3"
+                                style="max-width: 70%; margin-bottom: 5%">
+                        </center>
+                    </div>
+                    {{-- <div class="tab-pane fade" id="klimatologi" role="tabpanel" aria-labelledby="contact-tab">
                     <p>Iklim daerah Jawa Barat termasuk tropis dengan suhu udara rata-rata antara 16° Celsius - 34° Celsius dan curah hujan yang beragam. Curah hujan di Jawa Barat berada pada rentang curah hujan 1.000 - 4.000 mm per tahun (Sumber: Badan Meteorologi, Klimatologi dan Geofisika). Rata-rata hujan setiap bulan menunjukkan perbedaan yang jelas antara periode musim kemarau dengan curah hujan kurang dari 150 milimeter dan periode musim hujan dengan curah hujan lebih dari 150 milimeter. Persebaran curah hujan terendah berada di Wilayah Utara (Pantura, Bekasi sampai dengan Cirebon dan Kuningan) dan sebagian Wilayah Tengah Jawa Barat (Sukabumi, Cianjur, Bandung, dan Garut, dan sekitarnya); sedangkan sebaran curah hujan tinggi melingkupi Wilayah Barat-Selatan (Bogor dan Sukabumi), Wilayah Tengah (Purwakarta, Subang, Sumedang, dan sekitarnya) serta Wilayah TimurSelatan (Tasikmalaya, Kuningan, Ciamis, dan Pangandaran).</p>
                 </div>
                 <div class="tab-pane fade" id="demografi" role="tabpanel" aria-labelledby="demografi-tab">
@@ -58,9 +78,9 @@
                         Perlambatan pertumbuhan ekonomi Jawa Barat pada tahun 2017 dibandingkan Tahun 2016 disebabkan karena melambatnya beberapa lapangan usaha seperti Pertanian, Kehutanan, dan Perikanan; Transportasi dan Pergudangan; Penyediaan Akomodasi dan Makan Minum; Informasi dan Komunikasi; Jasa Keuangan dan Asuransi; Administrasi Pemerintahan, Pertahanan dan Jaminan Sosial Wajib; serta Jasa Kesehatan dan Kegiatan Sosial. Sementara itu, penurunan pertumbuhan lapangan usaha Pertambangan dan Penggalian serta Pengadaan Listrik dan Gas juga turut memberikan andil perlambatan pertumbuhan ekonomi Jawa Barat tahun 2017.
                     </p>
                 </div> --}}
-              </div>
-              </div>
-        </div> 
-    </div>        
-</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 @endsection

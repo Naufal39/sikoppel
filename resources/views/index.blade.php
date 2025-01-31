@@ -12,8 +12,8 @@
                             <div class="container">
                                 <div class="row justify-content-start">
                                     <div class="col-lg-7 text-start">
-                                        <h1 class="display-1 text-white animated slideInRight mb-3">{{ $posts[0]->title }}
-                                        </h1>
+                                        <h4 class="display-1 text-white animated slideInRight mb-3">{{ $posts[0]->title }}
+                                        </h4>
                                         <p class="mb-5 animated slideInRight">{{ $posts[0]->excerpt }}</p>
                                         <a href="../berita/{{ $posts[0]->slug }}"
                                             class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
@@ -359,7 +359,7 @@
                             Browsermu tidak mendukung tag ini, upgrade donk!
                         </video>
                         <!-- <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                                allowscriptaccess="always" allow="autoplay"></iframe> -->
+                                        allowscriptaccess="always" allow="autoplay"></iframe> -->
                     </div>
                 </div>
             </div>
